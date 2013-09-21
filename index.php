@@ -1,6 +1,9 @@
 <?php
 /**
- * @version 0.2.2
+ * @version 0.2.3
+ * @todo add city to filter via JS
+ * @todo add loading indicator to AJAX
+ * @todo check for duplicate entry (double-submission)
  */
 
 // Init app instance

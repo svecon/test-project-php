@@ -41,7 +41,7 @@
 	</tbody>
 </table>				
 
-<form method="post" action="create.php" class="form-horizontal" role="form">
+<form method="post" action="create.php" class="form-horizontal js-ajax" role="form">
 	<fieldset>
 
 		<div id="js-form-messages">
@@ -84,7 +84,7 @@
 
 		<div class="form-group">
 			<div class="col-lg-offset-2 col-lg-10">
-				<button type="submit" class="btn btn-primary js-ajax">Add new user</button>
+				<button type="submit" class="btn btn-primary">Add new user</button>
 			</div>
 		</div>
 	</fieldset>
