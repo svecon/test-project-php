@@ -34,7 +34,7 @@
 		<tr>
 			<td><?=$user->getName()?></td>
 			<td><?=$user->getEmail()?></td>
-			<td><?=$user->getCity()?></td>
+			<td class="js-city"><?=$user->getCity()?></td>
 			<td><?=$user->getPhone()?></td>
 		</tr>
 		<?php } ?>

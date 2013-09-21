@@ -12,9 +12,9 @@ $('#js-filters').on('change', '#js-city', function (event) {
 
 	rows.each(function(index, element)
 	{
-		if (this.innerHTML.indexOf(city) == -1)
-			$(this).addClass('hidden');
-		else
+		if ($(this).find('.js-city').html() === city)
 			$(this).removeClass('hidden');
+		else
+			$(this).addClass('hidden');
 	});
 });
