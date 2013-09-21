@@ -1,4 +1,7 @@
 <?php
+/**
+ * @version 0.1.1
+ */
 
 // Init app instance
 $app = require "./core/app.php";
