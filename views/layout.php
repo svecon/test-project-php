@@ -24,6 +24,7 @@
   </div> 
 
   <script type="text/javascript" charset="utf-8" src="js/filter-cities.js"></script> 
+  <script type="text/javascript" charset="utf-8" src="js/filter-ajax.js"></script> 
 
   </body>
 </html>
