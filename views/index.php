@@ -20,7 +20,7 @@
 	</div>
 </form>
 
-<table class="table table-striped" filterable>
+<table id='js-users' class="table table-striped" filterable>
 	<thead>
 		<tr>
 			<th>Name</th>
@@ -46,7 +46,7 @@
 
 		<div id="js-form-messages">
 			<?php foreach($errors as $error) { ?>
-			<div class="alert alert-danger"> <?=$error ?> </div>
+				<div class="alert alert-danger"> <?=$error ?> </div>
 			<?php } ?>
 		</div>
 
@@ -84,7 +84,7 @@
 
 		<div class="form-group">
 			<div class="col-lg-offset-2 col-lg-10">
-				<button type="submit" class="btn btn-primary">Add new user</button>
+				<button type="submit" class="btn btn-primary js-ajax">Add new user</button>
 			</div>
 		</div>
 	</fieldset>

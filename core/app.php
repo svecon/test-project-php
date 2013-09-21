@@ -55,6 +55,21 @@ class App {
 		// Render $content in layout
 		include './views/layout.php';
 	}
+
+	/**
+	 * Checks if this request was made via AJAX call
+	 * @return boolean
+	 */
+	public function isAjaxRequest()
+	{
+		if( !empty($_SERVER['HTTP_X_REQUESTED_WITH'])
+			&& strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest')
+		{
+			return true;
+		}
+
+		return false;
+	}
 	
 }
 
