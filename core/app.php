@@ -1,5 +1,10 @@
 <?php
 
+// Check if SESSION is already running
+if (session_status() == PHP_SESSION_NONE) {
+	session_start();
+}
+
 // Load BaseModel and all models from models directory
 require dirname(__FILE__).'/base_model.php';
 foreach (glob(dirname(__FILE__).'/../models/*.php') as $filename){
@@ -49,6 +54,21 @@ class App {
 		ob_end_clean();
 		// Render $content in layout
 		include './views/layout.php';
+	}
+
+	/**
+	 * Checks if this request was made via AJAX call
+	 * @return boolean
+	 */
+	public function isAjaxRequest()
+	{
+		if( !empty($_SERVER['HTTP_X_REQUESTED_WITH'])
+			&& strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest')
+		{
+			return true;
+		}
+
+		return false;
 	}
 	
 }
