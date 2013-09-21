@@ -1,6 +1,6 @@
 <?php
 /**
- * @version 0.2
+ * @version 0.2.1
  */
 
 // Init app instance
