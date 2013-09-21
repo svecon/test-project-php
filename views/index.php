@@ -4,7 +4,14 @@
   </div>
 </div>
 
-<h2></h2>
+<h2>User list</h2>
+
+<select id="js-city" class="form-control">
+	<option value="">-- All cities</option>
+	<?php foreach ($cities as $city) { ?>
+		<option value="<?=$city; ?>"><?=$city; ?></option>
+	<?php } ?>
+</select>
 
 <table class="table table-striped">
 	<thead>
