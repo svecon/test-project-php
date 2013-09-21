@@ -1,6 +1,6 @@
 <h1>PHP Test Application</h1>
 
-<table>
+<table class="table table-striped">
 	<thead>
 		<tr>
 			<th>Name</th>
@@ -19,16 +19,31 @@
 	</tbody>
 </table>				
 
-<form method="post" action="create.php">
+<form method="post" action="create.php" class="form-horizontal" role="form">
+	<div class="form-group">
+		<label for="name" class="col-lg-2 control-label">Name:</label>
+		<div class="col-lg-10">
+			<input name="name" input="text" id="name" class="form-control" />
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="email" class="col-lg-2 control-label">E-mail:</label>
+		<div class="col-lg-10">
+			<input name="email" input="text" id="email" class="form-control" />
+		</div>
+	</div>
+
+	<div class="form-group">
+		<label for="city" class="col-lg-2 control-label">City:</label>
+		<div class="col-lg-10">
+			<input name="city" input="text" id="city" class="form-control" />
+		</div>
+	</div>
 	
-	<label for="name">Name:</label>
-	<input name="name" input="text" id="name"/>
-	
-	<label for="email">E-mail:</label>
-	<input name="email" input="text" id="email"/>
-	
-	<label for="city">City:</label>
-	<input name="city" input="text" id="city"/>
-	
-	<button>Create new row</button>
+	<div class="form-group">
+		<div class="col-lg-offset-2 col-lg-10">
+			<button type="submit" class="btn btn-default">Create new row</button>
+		</div>
+	</div>
 </form>
