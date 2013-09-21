@@ -47,7 +47,7 @@
 		<div class="form-group">
 			<label for="name" class="col-lg-2 control-label">Name:</label>
 			<div class="col-lg-10">
-				<input name="name" input="text" id="name" class="form-control" />
+				<input name="name" type="text" id="name" class="form-control" required />
 			</div>
 		</div>
 
@@ -56,7 +56,7 @@
 			<div class="col-lg-10">
 				<div class="input-group">
 					<span class="input-group-addon">@</span>
-					<input name="email" input="text" id="email" class="form-control" />
+					<input name="email" type="email" id="email" class="form-control" required />
 				</div>
 			</div>
 		</div>
@@ -64,14 +64,14 @@
 		<div class="form-group">
 			<label for="city" class="col-lg-2 control-label">City:</label>
 			<div class="col-lg-10">
-				<input name="city" input="text" id="city" class="form-control" />
+				<input name="city" type="text" id="city" class="form-control" />
 			</div>
 		</div>
 
 		<div class="form-group">
 			<label for="phone" class="col-lg-2 control-label">Phone:</label>
 			<div class="col-lg-10">
-				<input name="phone" input="text" id="phone" class="form-control" />
+				<input name="phone" type="text" id="phone" class="form-control" pattern="(\+?\d[- .]*){7,13}" />
 			</div>
 		</div>
 
