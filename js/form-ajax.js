@@ -1,13 +1,17 @@
 
-$('form').on('click', '.js-ajax', function (event) {
+$(document).on('submit', 'form.js-ajax', function (event) 
+{
+	// Don't submit form (stop redirecting)
 	event.preventDefault();
 
-	var form = $(this).parents('form');
+	var form = $(this);
 	var action = form.attr('action');
 
-	$.post(action, form.serialize(), function(data, textStatus, jqXHR){
+	$.post(action, form.serialize(), function(data, textStatus, jqXHR)
+	{
 		var messages = JSON.parse(data);
 
+		// Form submission was successfull
 		if (typeof messages.success !== 'undefined')
 		{
 			// Remove error states (possible from previous requests)
@@ -22,6 +26,7 @@ $('form').on('click', '.js-ajax', function (event) {
 				+ '<td>' + messages.data.phone + '</td>'
 			+ '</tr>');
 		}
+		// There was an error
 		else
 		{
 			var generatedHTML = '';
