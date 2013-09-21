@@ -34,14 +34,14 @@
 		<tr>
 			<td><?=$user->getName()?></td>
 			<td><?=$user->getEmail()?></td>
-			<td><?=$user->getCity()?></td>
+			<td class="js-city"><?=$user->getCity()?></td>
 			<td><?=$user->getPhone()?></td>
 		</tr>
 		<?php } ?>
 	</tbody>
 </table>				
 
-<form method="post" action="create.php" class="form-horizontal" role="form" novalidate>
+<form method="post" action="create.php" class="form-horizontal" role="form">
 	<fieldset>
 
 		<div id="js-form-messages">
