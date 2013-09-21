@@ -6,6 +6,7 @@
 			<th>Name</th>
 			<th>E-mail</th>
 			<th>City</th>
+			<th>Phone</th>
 		</tr>
 	</thead>
 	<tbody>
@@ -14,6 +15,7 @@
 			<td><?=$user->getName()?></td>
 			<td><?=$user->getEmail()?></td>
 			<td><?=$user->getCity()?></td>
+			<td><?=$user->getPhone()?></td>
 		</tr>
 		<?php } ?>
 	</tbody>
@@ -40,7 +42,14 @@
 			<input name="city" input="text" id="city" class="form-control" />
 		</div>
 	</div>
-	
+
+	<div class="form-group">
+		<label for="phone" class="col-lg-2 control-label">Phone:</label>
+		<div class="col-lg-10">
+			<input name="phone" input="text" id="phone" class="form-control" />
+		</div>
+	</div>
+
 	<div class="form-group">
 		<div class="col-lg-offset-2 col-lg-10">
 			<button type="submit" class="btn btn-default">Create new row</button>
