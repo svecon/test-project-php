@@ -14,6 +14,7 @@ $('#js-filters').on('change', '#js-city', function (event) {
 	{
 		if (this.innerHTML.indexOf(city) == -1)
 			$(this).addClass('hidden');
-		else $(this).removeClass('hidden');
+		else
+			$(this).removeClass('hidden');
 	});
 });

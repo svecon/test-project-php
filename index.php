@@ -18,7 +18,7 @@ foreach ($users as $user)
 }
 sort($cities);
 
-// Check if there are any error messages which have not yet been displayed
+// Check if there are any error messages which have not been displayed yet
 $errors = isset($_SESSION['errors']) ? $_SESSION['errors'] : [];
 unset($_SESSION['errors']);
 

@@ -41,7 +41,7 @@
 	</tbody>
 </table>				
 
-<form method="post" action="create.php" class="form-horizontal" role="form" novalidate>
+<form method="post" action="create.php" class="form-horizontal" role="form">
 	<fieldset>
 
 		<div id="js-form-messages">
