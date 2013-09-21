@@ -18,8 +18,13 @@ foreach ($users as $user)
 }
 sort($cities);
 
+// Check if there are any error messages which have not yet been displayed
+$errors = isset($_SESSION['errors']) ? $_SESSION['errors'] : [];
+unset($_SESSION['errors']);
+
 // Render view 'views/index.php' and pass users variable there
 $app->renderView('index', array(
 	'users' => $users,
-	'cities' => $cities
+	'cities' => $cities,
+	'errors' => $errors,
 ));

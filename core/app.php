@@ -1,5 +1,10 @@
 <?php
 
+// Check if SESSION is already running
+if (session_status() == PHP_SESSION_NONE) {
+	session_start();
+}
+
 // Load BaseModel and all models from models directory
 require dirname(__FILE__).'/base_model.php';
 foreach (glob(dirname(__FILE__).'/../models/*.php') as $filename){

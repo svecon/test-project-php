@@ -41,8 +41,15 @@
 	</tbody>
 </table>				
 
-<form method="post" action="create.php" class="form-horizontal" role="form">
+<form method="post" action="create.php" class="form-horizontal" role="form" novalidate>
 	<fieldset>
+
+		<div id="js-form-messages">
+			<?php foreach($errors as $error) { ?>
+			<div class="alert alert-danger"> <?=$error ?> </div>
+			<?php } ?>
+		</div>
+
 		<legend>Add new user</legend>
 		<div class="form-group">
 			<label for="name" class="col-lg-2 control-label">Name:</label>
@@ -64,7 +71,7 @@
 		<div class="form-group">
 			<label for="city" class="col-lg-2 control-label">City:</label>
 			<div class="col-lg-10">
-				<input name="city" type="text" id="city" class="form-control" />
+				<input name="city" type="text" id="city" class="form-control" required />
 			</div>
 		</div>
 
