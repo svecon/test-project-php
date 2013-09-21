@@ -47,6 +47,7 @@ $user->insert(array(
 	'name' => $_POST['name'],
 	'email' => $_POST['email'],
 	'city' => $_POST['city'],
+	'phone' => $_POST['phone'],
 ));
 
 if ($app->isAjaxRequest())
