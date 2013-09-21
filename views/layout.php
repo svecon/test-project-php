@@ -21,7 +21,9 @@
     
     <?= $content ?>
     
-  </div>  
+  </div> 
+
+  <script type="text/javascript" charset="utf-8" src="js/filter-cities.js"></script> 
 
   </body>
 </html>
